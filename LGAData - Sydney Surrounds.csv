@@ -1,0 +1,82 @@
+LGA Profiler
+Source: 2010/11 Household Travel Survey
+Bureau of Transport Statistics
+,,Blue Mountains,Gosford,Hawkesbury,Wollondilly,Wyong
+Population,Persons,77000,166000,63000,44000,150000
+,No_of_households,30000,66000,22000,15000,59000
+,Average_household_size,2.6,2.5,2.8,3,2.6
+Total travel,Trips_av_weekday,256000,627000,234000,170000,591000
+,Trips_av_weekend_day,361000,616000,176000,141000,467000
+,Trips_per_person_weekday,3.3,3.8,3.7,3.9,3.9
+,Trips_per_person_weekend,4.7,3.7,2.8,3.2,3.1
+,Trips_per_household_weekday,8.6,9.5,10.5,11.6,10.1
+,Trips_per_household_weekend,12.1,9.3,7.9,9.7,8
+Purpose of travel (trips),Commute,33000,80000,36000,27000,66000
+,Work_related_business,25000,53000,32000,16000,56000
+,Education_child_care,26000,46000,23000,24000,46000
+,Shopping,40000,114000,30000,27000,101000
+,Personal_business,26000,55000,18000,11000,59000
+,Social_recreation,55000,148000,42000,29000,143000
+,Serve_passenger,42000,119000,48000,31000,110000
+,Other,8000,13000,6000,5000,10000
+Mode of travel (trips),Vehicle_driver,134000,351000,150000,106000,345000
+,Vehicle_passenger,51000,150000,56000,38000,162000
+,Train,13000,23000,5000,4000,12000
+,Bus,12000,26000,7000,9000,18000
+,Walk_only,54000,93000,19000,16000,65000
+,Other_modes,10000,16000,2000,4000,5000
+Purpose of travel (distance),Commute,692000,2015000,724000,940000,1555000
+,Work_related_business,532000,1176000,653000,288000,1400000
+,Education_childcare,228000,378000,252000,416000,482000
+,Shopping,344000,888000,288000,406000,874000
+,Personal_business,364000,553000,201000,136000,691000
+,Social_recreation,496000,1403000,691000,397000,1538000
+,Serve_passenger,423000,916000,551000,333000,1059000
+,Other,42000,116000,55000,34000,82000
+Mode of travel (distance),Vehicle_driver,1720000,4443000,2428000,1992000,4848000
+,Vehicle_passenger,540000,1513000,721000,533000,1864000
+,Train,627000,1115000,144000,189000,668000
+,Bus,112000,172000,81000,175000,168000
+,Walk_only,46000,77000,20000,17000,61000
+,Walk_linked5,28000,60000,13000,10000,30000
+,Other_modes,48000,64000,7000,34000,42000
+Purpose of travel (trips %),Commute,0.13,0.13,0.15,0.16,0.11
+,Work_related_business,0.1,0.09,0.14,0.1,0.09
+,Education_childcare,0.1,0.07,0.1,0.14,0.08
+,Shopping,0.16,0.18,0.13,0.16,0.17
+,Personal_business,0.1,0.09,0.08,0.07,0.1
+,Social_recreation,0.22,0.24,0.18,0.17,0.24
+,Serve_passenger,0.16,0.19,0.2,0.18,0.19
+,Other,0.03,0.02,0.02,0.03,0.02
+Mode of travel (trips %),Vehicle_driver,0.49,0.53,0.63,0.6,0.57
+,Vehicle_passenger,0.19,0.23,0.23,0.21,0.27
+,Train,0.05,0.03,0.02,0.02,0.02
+,Bus,0.04,0.04,0.03,0.05,0.03
+,Walk_only,0.2,0.14,0.08,0.09,0.11
+,Other_modes,0.03,0.02,0.01,0.02,0.01
+Purpose of travel (distance %),Commute,0.22,0.27,0.21,0.32,0.2
+,Work_related_business,0.17,0.16,0.19,0.1,0.18
+,Education_childcare,0.07,0.05,0.07,0.14,0.06
+,Shopping,0.11,0.12,0.08,0.14,0.11
+,Personal_business,0.12,0.07,0.06,0.05,0.09
+,Social_recreation,0.16,0.19,0.2,0.13,0.2
+,Serve_passenger,0.14,0.12,0.16,0.11,0.14
+,Other,0.01,0.02,0.02,0.01,0.01
+Mode of travel (distance %),Vehicle_driver,0.55,0.6,0.71,0.68,0.63
+,Vehicle_passenger,0.17,0.2,0.21,0.18,0.24
+,Train,0.2,0.15,0.04,0.06,0.09
+,Bus,0.04,0.02,0.02,0.06,0.02
+,Walk_only,0.01,0.01,0.01,0.01,0.01
+,Walk_linked5,0.01,0.01,0,0,0
+,Other_modes,0.02,0.01,0,0.01,0.01
+Vehicles,Private_vehicles,50000,108000,47000,32000,96000
+,Vehicles_per_household,1.7,1.6,2.1,2.2,1.6
+Distance (kms),Total_travel,3121000,7445000,3413000,2950000,7681000
+,Total_travel_per_capita,40.7,44.9,54.2,67.2,51.1
+,Av_trip_length,12.2,11.9,14.6,17.4,13
+,Vehicle_travel_(VKT),1720000,4443000,2428000,1992000,4848000
+,VKT_per_capita,22.4,26.8,38.5,45.4,32.3
+Travel time (mins),Av_work_trip_duration,40,38,33,41,35
+,Av_non_work_trip_duration,21,19,21,23,18
+,Av_Trip_duration_all_purposes,24,22,24,27,21
+,Daily_travel_time_per_capita,81,82,89,104,82
