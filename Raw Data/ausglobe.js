@@ -1,4 +1,5 @@
-require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({
+1:[function(require,module,exports){/*naturalsort.js*/
 /*
  * Natural Sort algorithm for Javascript - Version 0.7 - Released under MIT license
  * Author: Jim Palmer (based on chunking idea from Dave Koelle)
@@ -45,7 +46,8 @@ module.exports = function naturalSort (a, b) {
 	return 0;
 };
 
-},{}],2:[function(require,module,exports){
+},{}],
+2:[function(require,module,exports){/*copyrightmodule.js*/
 /**
  * @license
  * Copyright(c) 2012-2014 National ICT Australia Limited (NICTA).
@@ -64,9 +66,8 @@ module.exports = function naturalSort (a, b) {
  *
  */
 module.exports = undefined;
-
-
-},{}],3:[function(require,module,exports){
+},{}],
+3:[function(require,module,exports){/*KnockoutSanitizedHTMLBuild.js*/
 "use strict";
 
 /*global require*/
@@ -109,7 +110,8 @@ function sanitize(html) {
 }
 
 module.exports = KnockoutSanitizedHtmlBinding;
-},{"../../third_party/cesium/Source/Core/defined":245}],4:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/defined":245}],
+4:[function(require,module,exports){/*arraysAreEqual.js*/
 'use strict';
 
 var defined = require('../../third_party/cesium/Source/Core/defined');
@@ -134,7 +136,8 @@ function arraysAreEqual(left, right) {
 
 module.exports = arraysAreEqual;
 
-},{"../../third_party/cesium/Source/Core/defined":245}],5:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/defined":245}],
+5:[function(require,module,exports){/*corsProxy.js*/
 "use strict";
 
 /*global require,URI*/
@@ -183,7 +186,8 @@ function proxyAllowedHost(host, domains) {
 
 module.exports = corsProxy;
 
-},{"../../third_party/cesium/Source/Core/defined":245}],6:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/defined":245}],
+6:[function(require,module,exports){/*src/Core/createFragmentFromTemplate.js*/
 'use strict';
 
 var createFragmentFromTemplate = function(htmlString) {
@@ -200,7 +204,8 @@ var createFragmentFromTemplate = function(htmlString) {
 
 module.exports = createFragmentFromTemplate;
 
-},{}],7:[function(require,module,exports){
+},{}],
+7:[function(require,module,exports){/*src/Core*/
 'use strict';
 
 var inherit = function(base, derived) {
@@ -211,7 +216,8 @@ var inherit = function(base, derived) {
 };
 
 module.exports = inherit;
-},{}],8:[function(require,module,exports){
+},{}],
+8:[function(require,module,exports){/*src/Core/loadView.js*/
 'use strict';
 
 /*global require*/
@@ -220,7 +226,7 @@ var knockout = require('../../third_party/cesium/Source/ThirdParty/knockout');
 
 var createFragmentFromTemplate = require('./createFragmentFromTemplate');
 
-var loadView = function(htmlString, container, viewModel) {
+var loadView = functionf(htmlString, container, viewModel) {
     container = getElement(container);
 
     var fragment = createFragmentFromTemplate(htmlString);
@@ -249,7 +255,8 @@ var loadView = function(htmlString, container, viewModel) {
 
 module.exports = loadView;
 
-},{"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/Widgets/getElement":628,"./createFragmentFromTemplate":6}],9:[function(require,module,exports){
+},{"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/Widgets/getElement":628,"./createFragmentFromTemplate":6}],
+9:[function(require,module,exports){/*src/Core/readJson.js*/
 "use strict";
 
 /*global require*/
@@ -267,7 +274,8 @@ function readJson(file) {
 
 module.exports = readJson;
 
-},{"../../third_party/cesium/Source/ThirdParty/when":596,"./readText":10}],10:[function(require,module,exports){
+},{"../../third_party/cesium/Source/ThirdParty/when":596,"./readText":10}],
+10:[function(require,module,exports){/*src/Core/readText.js*/
 "use strict";
 
 /*global require*/
@@ -293,7 +301,8 @@ function readText(file) {
 }
 
 module.exports = readText;
-},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/ThirdParty/when":596}],11:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/ThirdParty/when":596}],
+11:[function(require,module,exports){/*src/Core/readXml.js*/
 "use strict";
 
 /*global require*/
@@ -312,8 +321,8 @@ function readXml(file) {
 }
 
 module.exports = readXml;
-
-},{"../../third_party/cesium/Source/ThirdParty/when":596,"./readText":10}],12:[function(require,module,exports){
+},{"../../third_party/cesium/Source/ThirdParty/when":596,"./readText":10}],
+12:[function(require,module,exports){/*src/Core/registerKnowkcoutBindings.js*/
 'use strict';
 
 /*global require*/
@@ -339,7 +348,8 @@ var registerKnockoutBindings = function() {
 
 module.exports = registerKnockoutBindings;
 
-},{"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/Widgets/SvgPathBindingHandler":621,"./KnockoutSanitizedHtmlBinding":3}],13:[function(require,module,exports){
+},{"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/Widgets/SvgPathBindingHandler":621,"./KnockoutSanitizedHtmlBinding":3}],
+13:[function(require,module,exports){/*src/Core/runLater.js*/
 'use strict';
 
 /*global require*/
@@ -360,7 +370,8 @@ var runLater = function(functionToRunLater) {
 
 module.exports = runLater;
 
-},{"../../third_party/cesium/Source/ThirdParty/when":596}],14:[function(require,module,exports){
+},{"../../third_party/cesium/Source/ThirdParty/when":596}],
+14:[function(require,module,exports){/*src/Map/Dataset.js*/
 /*global require,$,alert*/
 "use strict";
 
@@ -793,7 +804,8 @@ Dataset.prototype.destroy = function () {
 module.exports = Dataset;
 
 
-},{"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/loadText":262,"./VarType":17,"./Variable":18}],15:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/loadText":262,"./VarType":17,"./Variable":18}],
+15:[function(require,module,exports){/*src/Map/LeafletVisualizer.js*/
 
 "use strict";
 
@@ -1348,7 +1360,8 @@ LeafletVisualizer.prototype.visualizersCallback = function(map, dataSource) {
 
 module.exports = LeafletVisualizer;
 
-},{"../../third_party/cesium/Source/Core/AssociativeArray":93,"../../third_party/cesium/Source/Core/Cartesian2":101,"../../third_party/cesium/Source/Core/Color":111,"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Ellipsoid":130,"../../third_party/cesium/Source/Core/Math":174,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/writeTextToCanvas":273,"../../third_party/cesium/Source/DataSources/Property":321}],16:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/AssociativeArray":93,"../../third_party/cesium/Source/Core/Cartesian2":101,"../../third_party/cesium/Source/Core/Color":111,"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Ellipsoid":130,"../../third_party/cesium/Source/Core/Math":174,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/writeTextToCanvas":273,"../../third_party/cesium/Source/DataSources/Property":321}],
+16:[function(require,module,exports){/*src/Map/TableDataSource.js*/
 /*global require*/
 "use strict";
 
@@ -1788,14 +1801,16 @@ TableDataSource.prototype.destroy = function () {
 
 module.exports = TableDataSource;
 
-},{"../../third_party/cesium/Source/Core/Color":111,"../../third_party/cesium/Source/Core/JulianDate":168,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/loadText":262,"../../third_party/cesium/Source/DataSources/CzmlDataSource":286,"./Dataset":14}],17:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/Color":111,"../../third_party/cesium/Source/Core/JulianDate":168,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/loadText":262,"../../third_party/cesium/Source/DataSources/CzmlDataSource":286,"./Dataset":14}],
+17:[function(require,module,exports){/*src/Map/VarType.js*/
 'use strict';
 
 var VarType = {LON: 0, LAT: 1, ALT: 2, TIME: 3, SCALAR: 4, ENUM: 5 };
 
 module.exports = VarType;
 
-},{}],18:[function(require,module,exports){
+},{}],
+18:[function(require,module,exports){/*src/Map/Variable.js*/
 /*global require*/
 "use strict";
 
@@ -2036,7 +2051,8 @@ module.exports = Variable;
 
 
 
-},{"../../third_party/cesium/Source/Core/JulianDate":168,"../../third_party/cesium/Source/Core/destroyObject":247,"./VarType":17}],19:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/JulianDate":168,"../../third_party/cesium/Source/Core/destroyObject":247,"./VarType":17}],
+19:[function(require,module,exports){/*src/Map/gmlToGeoJson.js*/
 'use strict';
 
 /*global $*/
@@ -2107,7 +2123,8 @@ function gml2coord(posList) {
 }
 
 module.exports = gmlToGeoJson;
-},{}],20:[function(require,module,exports){
+},{}],
+20:[function(require,module,exports){/*src//Map/rectangleToLatLngBounds.js*/
 'use strict';
 
 /*global require,L*/
@@ -2129,7 +2146,8 @@ var rectangleToLatLngBounds = function(rectangle) {
 
 module.exports = rectangleToLatLngBounds;
 
-},{"../../third_party/cesium/Source/Core/Math":174}],21:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/Math":174}],
+21:[function(require,module,exports){/*src/Map/unionRectangles.js*/
 'use strict';
 
 /*global require*/
@@ -2171,7 +2189,8 @@ var unionRectangles = function(first, second, result) {
 
 module.exports = unionRectangles;
 
-},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defined":245}],22:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defined":245}],
+22:[function(require,module,exports){/*src/Models/Application.js*/
 "use strict";
 
 /*global require, URI*/
@@ -2487,7 +2506,8 @@ function loadInitSource(source) {
 
 module.exports = Application;
 
-},{"../../third_party/cesium/Source/Core/Clock":108,"../../third_party/cesium/Source/Core/Event":138,"../../third_party/cesium/Source/Core/FeatureDetection":141,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/loadJson":261,"../../third_party/cesium/Source/Core/queryToObject":269,"../../third_party/cesium/Source/DataSources/DataSourceCollection":289,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/corsProxy":5,"./Catalog":25,"./ModelError":41,"./NowViewing":42,"./Services":44,"./ViewerMode":45}],23:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/Clock":108,"../../third_party/cesium/Source/Core/Event":138,"../../third_party/cesium/Source/Core/FeatureDetection":141,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/loadJson":261,"../../third_party/cesium/Source/Core/queryToObject":269,"../../third_party/cesium/Source/DataSources/DataSourceCollection":289,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/corsProxy":5,"./Catalog":25,"./ModelError":41,"./NowViewing":42,"./Services":44,"./ViewerMode":45}],
+23:[function(require,module,exports){/*src/Models/ArcGisMapServerCatalogItem.js*/
 'use strict';
 
 /*global require,L,URI*/
@@ -2645,7 +2665,8 @@ function proxyUrl(application, url) {
 
 module.exports = ArcGisMapServerCatalogItem;
 
-},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Scene/ArcGisMapServerImageryProvider":367,"../../third_party/cesium/Source/Scene/ImageryLayer":396,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../Core/inherit":7,"./ImageryLayerCatalogItem":36}],24:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Scene/ArcGisMapServerImageryProvider":367,"../../third_party/cesium/Source/Scene/ImageryLayer":396,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../Core/inherit":7,"./ImageryLayerCatalogItem":36}],
+24:[function(require,module,exports){/*src/Models/BingMapsCatalogItem.js*/
 'use strict';
 
 /*global require,L*/
@@ -2776,7 +2797,8 @@ BingMapsCatalogItem.prototype._disableInLeaflet = function() {
 
 module.exports = BingMapsCatalogItem;
 
-},{"../../third_party/cesium/Source/Core/BingMapsApi":96,"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Scene/BingMapsImageryProvider":370,"../../third_party/cesium/Source/Scene/BingMapsStyle":371,"../../third_party/cesium/Source/Scene/ImageryLayer":396,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../Core/inherit":7,"./ImageryLayerCatalogItem":36}],25:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/BingMapsApi":96,"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Scene/BingMapsImageryProvider":370,"../../third_party/cesium/Source/Scene/BingMapsStyle":371,"../../third_party/cesium/Source/Scene/ImageryLayer":396,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../Core/inherit":7,"./ImageryLayerCatalogItem":36}],
+25:[function(require,module,exports){/*src/Models/Catalog.js*/
 'use strict';
 
 /*global require*/
@@ -2954,7 +2976,8 @@ Catalog.prototype.serializeToJson = function(options) {
 
 module.exports = Catalog;
 
-},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/RuntimeError":207,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"./CatalogGroup":26,"./createCatalogMemberFromType":53}],26:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/RuntimeError":207,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"./CatalogGroup":26,"./createCatalogMemberFromType":53}],
+26:[function(require,module,exports){/*src/Models/CatalogGroup.js*/
 'use strict';
 
 /*global require*/
@@ -3344,7 +3367,8 @@ CatalogGroup.prototype.sortItems = function(sortRecursively) {
 
 module.exports = CatalogGroup;
 
-},{"../../third_party/cesium/Source/Core/RuntimeError":207,"../../third_party/cesium/Source/Core/clone":240,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/arraysAreEqual":4,"../Core/inherit":7,"../Core/runLater":13,"./CatalogMember":28,"./createCatalogMemberFromType":53,"./raiseErrorOnRejectedPromise":54,"javascript-natural-sort":1}],27:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/RuntimeError":207,"../../third_party/cesium/Source/Core/clone":240,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/arraysAreEqual":4,"../Core/inherit":7,"../Core/runLater":13,"./CatalogMember":28,"./createCatalogMemberFromType":53,"./raiseErrorOnRejectedPromise":54,"javascript-natural-sort":1}],
+27:[function(require,module,exports){/*src/Models/CatalogItem.js*/
 'use strict';
 
 /*global require,ga,$*/
@@ -4125,7 +4149,8 @@ function isShownChanged(catalogItem) {
 
 module.exports = CatalogItem;
 
-},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Math":174,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/clone":240,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/arraysAreEqual":4,"../Core/inherit":7,"../Core/runLater":13,"./CatalogMember":28,"./Metadata":39,"./raiseErrorOnRejectedPromise":54}],28:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Math":174,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/clone":240,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/arraysAreEqual":4,"../Core/inherit":7,"../Core/runLater":13,"./CatalogMember":28,"./Metadata":39,"./raiseErrorOnRejectedPromise":54}],
+28:[function(require,module,exports){/*src/Models/CatalogMember.js*/
 'use strict';
 
 /*global require*/
@@ -4402,7 +4427,8 @@ CatalogMember.prototype.serializeToJson = function(options) {
 
 module.exports = CatalogMember;
 
-},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596}],29:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596}],
+29:[function(require,module,exports){/*src/Models/Cesium.js*/
 'use strict';
 
 /*global require*/
@@ -4590,7 +4616,8 @@ function postRender(cesium, date) {
 
 module.exports = Cesium;
 
-},{"../../third_party/cesium/Source/Core/Cartesian2":101,"../../third_party/cesium/Source/Core/Cartesian3":102,"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Ellipsoid":130,"../../third_party/cesium/Source/Core/JulianDate":168,"../../third_party/cesium/Source/Core/Math":174,"../../third_party/cesium/Source/Core/Matrix4":177,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/getTimestamp":252,"../../third_party/cesium/Source/Scene/CameraFlightPath":378,"../../third_party/cesium/Source/ThirdParty/when":596}],30:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/Cartesian2":101,"../../third_party/cesium/Source/Core/Cartesian3":102,"../../third_party/cesium/Source/Core/DeveloperError":123,"../../third_party/cesium/Source/Core/Ellipsoid":130,"../../third_party/cesium/Source/Core/JulianDate":168,"../../third_party/cesium/Source/Core/Math":174,"../../third_party/cesium/Source/Core/Matrix4":177,"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/defaultValue":243,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/destroyObject":247,"../../third_party/cesium/Source/Core/getTimestamp":252,"../../third_party/cesium/Source/Scene/CameraFlightPath":378,"../../third_party/cesium/Source/ThirdParty/when":596}],
+30:[function(require,module,exports){/*src/Models/CkanCatalogGroup.js*/
 'use strict';
 
 /*global require,URI,$*/
@@ -5053,7 +5080,8 @@ function cleanAndProxyUrl(application, url) {
 
 module.exports = CkanCatalogGroup;
 
-},{"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/clone":240,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/Core/loadJson":261,"../../third_party/cesium/Source/Core/loadText":262,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/corsProxy":5,"../Core/inherit":7,"./ArcGisMapServerCatalogItem":23,"./CatalogGroup":26,"./ModelError":41,"./WebMapServiceCatalogItem":49}],31:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/Rectangle":201,"../../third_party/cesium/Source/Core/clone":240,"../../third_party/cesium/Source/Core/defineProperties":244,"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/Core/freezeObject":249,"../../third_party/cesium/Source/Core/loadJson":261,"../../third_party/cesium/Source/Core/loadText":262,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"../Core/corsProxy":5,"../Core/inherit":7,"./ArcGisMapServerCatalogItem":23,"./CatalogGroup":26,"./ModelError":41,"./WebMapServiceCatalogItem":49}],
+31:[function(require,module,exports){
 'use strict';
 
 /*global require*/
@@ -5139,7 +5167,8 @@ CompositeCatalogItem.prototype.lowerToBottom = function() {
 
 module.exports = CompositeCatalogItem;
 
-},{"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"./CatalogItem":27}],32:[function(require,module,exports){
+},{"../../third_party/cesium/Source/Core/defined":245,"../../third_party/cesium/Source/ThirdParty/knockout":591,"../../third_party/cesium/Source/ThirdParty/when":596,"./CatalogItem":27}],
+32:[function(require,module,exports){
 'use strict';
 
 /*global require,L,$*/
