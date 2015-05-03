@@ -14,8 +14,8 @@ Instructions for building the integrated New South Wales and Victoria Data sets
 git clone https://github.com/Fedoraman42/NICTA-NDSU-National-Map.git
 
 2. Install Prerequisites
-- PostgreSQL-9.4
-- R-Base
+PostgreSQL-9.4
+R-Base
 
 apt-get install postgresql-9.4 R-base
 - may change based on versions and operating system
