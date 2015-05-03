@@ -2,9 +2,11 @@
 
 Aggregated Victoria dataset in the format of New South Wales
 
-Base formatting: NSWComplete.csv
-Victoria aggregated with same formatting: VictoriaFormatted.csv
-Both regions together formatted: Australia.csv
+- Base formatting: NSWComplete.csv
+
+- Victoria aggregated with same formatting: VictoriaFormatted.csv
+
+- Both regions together formatted: Australia.csv
 
 Instructions for building the integrated New South Wales and Victoria Data sets
 
