@@ -1,11 +1,11 @@
-#Name: NSW_CSVSPLIT
-#Creation Date: 3/10/2015
-#Author: Sean Lutjohn
-#Description: Splits the csv based on a keyword in the file. The purpose is to help us get visualizations set up
+# Name: NSW_CSVSPLIT
+# Creation Date: 3/10/2015
+# Author: Sean Luthjohn
+# Description: Splits the csv based on a keyword in the file. The purpose is to help us get visualizations set up
 # specifically for one survey type. After the split is done each survey is written out to a file with the survey name.
 
 
-data <- read.csv(file = "C:/Users/Sean/Google Drive/NICTA Capstone/NSW_DATA/NSWComplete.csv", header= F, fill = T)
+data <- read.csv(file = "C:/Users/Sean/Google Drive/NICTA Capstone/NSW_DATA/NSWComplete.csv", header = F, fill = T)
 keyWords = list()
 
 keyWordsPortion = c()
@@ -32,20 +32,20 @@ for (type in data$V1)
     }
     
   }
-  i <- i+1
+  i <- i + 1
 }
 
 ii <- 1
 for (row in 1:dim(data)[1])
 {
-  if (data[row,1] %in% keyWords)
+  if (data[row, 1] %in% keyWords)
   {
     break
   }
-  ii<- ii + 1
+  ii <- ii + 1
 }
-xx<-1
-y<-1
+xx <- 1
+y <- 1
 df <- data.frame()
 
 for (row in ii:dim(data)[1])
@@ -54,26 +54,26 @@ for (row in ii:dim(data)[1])
   
   if(xx <= keyWordsPortion[y])
   {
-    df <- rbind(data[row,],df)
+    df <- rbind(data[row, ], df)
     print(xx)
-    xx <- xx+1
+    xx <- xx + 1
   }
   else
   {    
     data$V1 <- NULL
     df$V1 <- NULL
-    df <- rbind(data[skip,],df)
+    df <- rbind(data[skip, ], df)
     df = t(df)
-    colnames(df) = df[1,]
-    df = df[-1,]
-    write.csv(df, file = paste("C:/Users/Sean/Google Drive/NICTA Capstone/NSW_DATA/",keyWords[y],".csv",sep=""),row.names = F)
-    y<-y+1
+    colnames(df) = df[1, ]
+    df = df[-1, ]
+    write.csv(df, file = paste("C:/Users/Sean/Google Drive/NICTA Capstone/NSW_DATA/", keyWords[y], ".csv", sep=""), row.names = F)
+    y <- y + 1
     df <- data.frame()
     
-    #bind next row so its not skipped for the next section
+    #bind next row so it's not skipped for the next section
     #increment xx by 1 so each section handles the correct portion
-    xx<- 2
-    df <- rbind(data[row,],df)
+    xx  <- 2
+    df <- rbind(data[row, ], df)
   }
   
   
@@ -81,11 +81,11 @@ for (row in ii:dim(data)[1])
   {
     data$V1 <- NULL
     df$V1 <- NULL
-    df <- rbind(data[skip,],df)
+    df <- rbind(data[skip, ], df)
     df = t(df)
-    colnames(df) = df[1,]
-    df = df[-1,]
-    write.csv(df, file = paste("C:/Users/Sean/Google Drive/NICTA Capstone/NSW_DATA/",keyWords[y],".csv",sep=""),row.names = F)
+    colnames(df) = df[1, ]
+    df = df[-1, ]
+    write.csv(df, file = paste("C:/Users/Sean/Google Drive/NICTA Capstone/NSW_DATA/", keyWords[y], ".csv", sep = ""), row.names = F)
   }
   
   
