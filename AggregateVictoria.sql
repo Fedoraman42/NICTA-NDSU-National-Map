@@ -1,3 +1,10 @@
+/*
+Name: AggregateVictoria
+Creation Date: 5/02/2015
+Author: Sean Lutjohn
+Description: Aggregates the victoria data and inserts it into a new table
+*/
+
 ﻿\connect victoria;
 
 DROP TABLE IF EXISTS "Vic_Formatted";
