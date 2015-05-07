@@ -18,5 +18,7 @@ git clone https://github.com/Fedoraman42/NICTA-NDSU-National-Map.git
 apt-get install postgresql-9.4 R-base
 - may change based on versions and operating system
 
-3. Run script Aggregate.sh
+3. Update all file paths in all scripts in Aggregate.sh
+
+4. Run script Aggregate.sh
 sudo sh ./Aggregate.sh
